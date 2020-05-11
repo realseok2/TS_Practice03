@@ -17,15 +17,12 @@ public class TS_Ex07 {
 		System.out.println("숫자를 입력하세요!");
 		num = sc.nextInt();
 
-		for (int column = 1; column == num; column++) {
-			for (int row = 1; row == column; row++) {
+		for (int column = 1; column <= num; column++) {
+			for (int row = 1; row <= column; row++) {
 				System.out.print(column);
 			}
 			System.out.println("");
 		}
-
-		;
-
 		sc.close();
 	}
 

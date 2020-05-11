@@ -10,11 +10,9 @@ public class TS_Ex08 {
 
 		for (int column = 2; column <= 9; column++) {
 			for (int row = 1; row <=9; row++) {
-				if (row == 9) {
-					System.out.println("");
-				}
-				System.out.print(column + " * " + row + " = " + column * row + "\t\t\t");
+				System.out.print(column + " * " + row + " = " + column * row + "\t\t");
 			}
+			System.out.println("");
 		}
 	}
 }
