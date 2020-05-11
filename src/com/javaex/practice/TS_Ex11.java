@@ -16,7 +16,7 @@ public class TS_Ex11 {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("입력받은 숫자의 종류에 따라 합계를 출력하는 프로그램입니다.");
+		System.out.println("입력받은 숫자를 짝수 홀수로 분류하여 합계를 출력하는 프로그램입니다.");
 
 		int x, y;
 		int sum = 0;

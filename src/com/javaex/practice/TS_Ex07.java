@@ -14,7 +14,7 @@ public class TS_Ex07 {
 
 		System.out.println("숫자를 입력 받아 해당 숫자만큼의 열이 출력되는 프로그램입니다.");
 
-		System.out.println("숫자를 입력하세요!");
+		System.out.println("숫자를 입력하세요! : ");
 		num = sc.nextInt();
 
 		for (int column = 1; column <= num; column++) {

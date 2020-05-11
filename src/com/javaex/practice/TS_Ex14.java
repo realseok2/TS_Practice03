@@ -7,7 +7,7 @@ public class TS_Ex14 {
 	public static void main(String[] args) {
 
 //		Ex14. 13번 문제에 아래와 같이 계산식이 표시되도록 프로그램을 작성하세요.
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		int x, y;
@@ -18,7 +18,13 @@ public class TS_Ex14 {
 
 		for (y = 1; y <= x; y++) {
 			sum = sum + y;
-			System.out.print(y + " + ");
+			if (y < x) {
+
+				System.out.print(y + " + ");
+
+			} else {
+				System.out.println(y);
+			}
 		}
 		System.out.println("");
 		System.out.println("입력하신 숫자까지 범위의 총 누적 합은 " + sum + "입니다.");
