@@ -1,3 +1,4 @@
+
 package com.javaex.practice;
 
 import java.util.Scanner;
@@ -21,19 +22,17 @@ public class TS_Ex20 {
 		System.out.println("==================================");
 		System.out.println("\t\t   숫자 맞추기 게임을 시작합니다.");
 		System.out.println("==================================");
+		System.out.println("\n우선 자동으로 랜덤하게 숫자를 선정하도록 하겠습니다.\n");
 		int no1 = (int) (Math.random() * 100) + 1;
 		System.out.println("숫자 선정이 완료되었습니다.");
 		System.out.println("이제 게임을 시작하도록 하겠습니다.\n");
-		System.out.println("\n우선 자동으로 랜덤하게 숫자를 선정하도록 하겠습니다.\n");
 		
+
 		int select;
 		String breakgame;
 		boolean gameEnd = false;
 
 		do {
-			
-			
-			System.out.println(no1);
 			System.out.print("숫자를 선택해 주세요 > ");
 			select = sc.nextInt();
 
@@ -44,27 +43,31 @@ public class TS_Ex20 {
 				System.out.println("Up. 더 높은 숫자를 선택해 주세요.");
 				System.out.println("==================================");
 			} else {
-				
-				//sc.nextLine();  //숫자-->문자열 오류
+
+				// sc.nextLine(); //숫자-->문자열 오류
 				System.out.println("정답입니다!");
 				System.out.print("게임을 종료하시겠습니까? [ Y / N ]\t>>\t");
-				breakgame = sc.nextLine();
-				
-				
-				if (breakgame.equals( "Y")) {
+				breakgame = sc.next();
+
+				if (breakgame.equals("Y")) {
 					System.out.println("==================================");
 					System.out.println("\t\t   숫자 맞추기 게임을 종료합니다.");
 					System.out.println("==================================");
-					gameEnd=false;
-				} else if (breakgame.equals( "N")) {
+					gameEnd = true;
+				} else if (breakgame.equals("N")) {
 					System.out.println("새로운 숫자를 선정하여 다시 게임을 진행하도록 하겠습니다.");
-					gameEnd=true;	
+					gameEnd = false;
 					no1 = (int) (Math.random() * 100) + 1;
-				
+
+				} else {
+					System.out.println("잘못입력하셨습니다. [ Y / N ]중에 선택하여 다시 입력해 주세요.");
+					System.out.print("[ Y / N ]  >>  ");
+					breakgame = sc.next();
 				}
 			}
 
-		} while (!gameEnd);// do
+		} while (!gameEnd);
+		// do
 
 		sc.close();
 
