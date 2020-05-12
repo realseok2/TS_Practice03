@@ -58,6 +58,7 @@ public class TS_Ex20 {
 						gameEnd = false;
 						result = false;
 					} else if (breakgame.equals("N")) {
+						System.out.println("==================================");
 						System.out.println("새로운 숫자를 선정하여 다시 게임을 진행하도록 하겠습니다.");
 						gameEnd = true;
 						result = false;

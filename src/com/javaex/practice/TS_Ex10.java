@@ -15,7 +15,7 @@ public class TS_Ex10 {
 
 		int max = 0;
 		for (int i = 0; i < 5; i++) {
-			System.out.println("숫자를 입력해 주세요.");
+			System.out.print("숫자를 입력해 주세요 : ");
 			int num = sc.nextInt();
 			if (num > max) {
 				max = num;
